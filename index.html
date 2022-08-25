@@ -16,16 +16,49 @@
       <button class="start-button">Start Quiz</button>
     </header>
 
+    <!-- Code Quiz Prompt-->
+    <div class="code-quiz">
+      <h2 class="q-prompt"></h2>
+      <button class="choice" id="A" data-state="A"></button>
+      <button class="choice" id="B" data-state="B"></button>
+      <button class="choice" id="C" data-state="C"></button>
+      <button class="choice" id="D" data-state="D"></button>
+    </div>
+
+
+    <!--Nav bar with a button to view high scores and a remaining time id-->
     <nav>
         <button id = "view-high-scores">View High Scores</button>
         <p>Time: <span id = "remaining-time">0</span></p>
-      </nav>
-    <main>
-      <section>
-            <div class=""></div>
-      </section>
+    </nav>
 
-    </main>
+    <!--Resulting High Score Display-->
+    <section>
+      <div class = "high-score-display">
+        <h2>High Scores</h2>
+          <ol class = "all-scores"></ol>
+        <div class = "high-score-button">
+          <button id = "back">Back</button>
+          <button id = "clear">Clear High Scores</button>
+        </div>
+      </div>
+    </section>
+
+     <!--Making a html for when coding quiz is finished--> 
+     <!--Making a form to hold the initials of the user-->
+    <section>
+      <div class = "all-done">
+        <h2>All Done!</h2>
+        <h3>Your final score is <span id = "user-score"></span></h3>
+
+        <form action="enter-initials">
+          <label for = "initials">Enter Initials:</label>
+          <input id = "user-initials" type = "text" placeholder="Initials here"/>
+          <button id = "submit-button">Submit</button>
+        </form>
+      </div>
+    </section>
+
     <script src="assets/js/script.js"></script>
   </body>
 </html>
