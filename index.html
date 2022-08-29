@@ -4,16 +4,26 @@
     <title>Code Quiz</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
   </head>
   <body>
     <header>
+       <!--Nav bar with a button to view high scores and a remaining time id-->
+    
+      <button id = "view-high-scores">View High Scores</button>
+      <p>Time: <span id = "remaining-time">0</span></p>
+    
+    </header>
+    
+      <div class = "start-button-container">
       <h2 class= "large-font">Coding Quiz Challenge</h2>
       <p>Try to answer the following code-related questions
         within the time limit. Keep in mind that incorrect answers
         will penalize your score/time by ten seconds!
       </p>
-      <button class="start-button">Start Quiz</button>
+      <button id="start-button">Start Quiz</button>
+    </div>
     </header>
 
     <!-- Code Quiz Prompt-->
@@ -24,13 +34,6 @@
       <button class="choice" id="C" data-state="C"></button>
       <button class="choice" id="D" data-state="D"></button>
     </div>
-
-
-    <!--Nav bar with a button to view high scores and a remaining time id-->
-    <nav>
-        <button id = "view-high-scores">View High Scores</button>
-        <p>Time: <span id = "remaining-time">0</span></p>
-    </nav>
 
     <!--Resulting High Score Display-->
     <section>
