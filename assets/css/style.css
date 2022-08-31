@@ -28,6 +28,7 @@ header{
 header button{
     margin: 0;
     height: 30px;
+    color: white;
 }
 
 a{
@@ -58,9 +59,9 @@ h3{
 
 button{
     margin: 0 auto 10px auto;
-    background-color: var(--light-purple);
+    background-color: var(--dark-purple);
     border: 2px solid var(--dark-blue);
-    color: var(--dark-blue);
+    color: white;
     width: 150px;
     height: 25px;
     z-index: 1;
