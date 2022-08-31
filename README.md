@@ -6,7 +6,7 @@ A website that hosts a quiz.
 
 ## Screenshot
 
-![Gif of Code-Quiz Page working](/code-quiz.gif)
+![Gif of Code-Quiz Page working](/assets/imgs/code-quiz.gif)
 
 ## github website link
 
